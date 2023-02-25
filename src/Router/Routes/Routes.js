@@ -1,4 +1,4 @@
-//import AscendingDescending from "../../components/AscendingDescending/AscendingDescending";
+import AscendingDescending from "../../components/AscendingDescending/AscendingDescending";
 import Countries from "../../components/Countries/Countries";
 //import OceaniaRegion from "../../components/OceaniaRegion/OceaniaRegion";
 //import SmallerLithuania from "../../components/SmallerLithuania/SmallerLithuania";
@@ -23,10 +23,10 @@ const router = createBrowserRouter([
         path: '/countries',
         element: <Countries></Countries>
       },
-      // {
-      //   path: '/AscendingDescending',
-      //   element: <AscendingDescending></AscendingDescending>
-      // },
+      {
+        path: '/AscendingDescending',
+        element: <AscendingDescending></AscendingDescending>
+      },
       // {
       //   path: '/SmallerLithuania',
       //   element: <SmallerLithuania></SmallerLithuania>
