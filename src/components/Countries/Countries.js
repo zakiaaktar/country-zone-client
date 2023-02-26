@@ -4,10 +4,9 @@ import Pagination from '../Pagination/Pagination';
 
 
 const Countries = () => {
-   
+
     const [countries, setCountries] = useState([]);
     const [loading, setLoading] = useState(false);
-
     const [currentPage, setCurrentPage] = useState(1);
     const [postsPerPage] = useState(10);
 
@@ -39,7 +38,7 @@ const Countries = () => {
 
     if (loading) {
         return <h2>Loading...</h2>;
-      }
+    }
 
     return (
         <div>

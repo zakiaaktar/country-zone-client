@@ -1,7 +1,7 @@
 import AscendingDescending from "../../components/AscendingDescending/AscendingDescending";
 import Countries from "../../components/Countries/Countries";
 //import OceaniaRegion from "../../components/OceaniaRegion/OceaniaRegion";
-//import SmallerLithuania from "../../components/SmallerLithuania/SmallerLithuania";
+import SmallerLithuania from "../../components/SmallerLithuania/SmallerLithuania";
 
 const { createBrowserRouter } = require("react-router-dom");
 const { default: Main } = require("../../Layout/Main");
@@ -27,10 +27,10 @@ const router = createBrowserRouter([
         path: '/AscendingDescending',
         element: <AscendingDescending></AscendingDescending>
       },
-      // {
-      //   path: '/SmallerLithuania',
-      //   element: <SmallerLithuania></SmallerLithuania>
-      // },
+      {
+        path: '/SmallerLithuania',
+        element: <SmallerLithuania></SmallerLithuania>
+      },
       // {
       //   path: '/OceaniaRegion',
       //   element: <OceaniaRegion></OceaniaRegion>

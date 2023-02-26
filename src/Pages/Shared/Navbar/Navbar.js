@@ -6,18 +6,14 @@ const Navbar = () => {
    
 
 
-    
-
     const menuItems = <>
         <li className='text-white font-semibold px-10'><Link to='/'>All Countries</Link></li>
         <li className='text-white font-semibold px-10'><Link to='/AscendingDescending'>Ascending / Descending</Link></li>
-        {/* <li className='text-white font-semibold px-10'><Link to='/SmallerLithuania'>Smaller Lithuania Area</Link></li>
-        <li className='text-white font-semibold px-10'><Link to='/OceaniaRegion'>Oceania Region</Link></li> */}
+        <li className='text-white font-semibold px-10'><Link to='/SmallerLithuania'>Smaller Lithuania Area</Link></li>
+        {/* <li className='text-white font-semibold px-10'><Link to='/OceaniaRegion'>Oceania Region</Link></li> */}
 
        
     </>
-
-
 
 
 
