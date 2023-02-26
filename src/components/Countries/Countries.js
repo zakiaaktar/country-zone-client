@@ -4,15 +4,10 @@ import Pagination from '../Pagination/Pagination';
 
 
 const Countries = () => {
-
     const [countries, setCountries] = useState([]);
     const [loading, setLoading] = useState(false);
     const [currentPage, setCurrentPage] = useState(1);
     const [postsPerPage] = useState(10);
-
-
-
-
 
 
 
@@ -21,7 +16,7 @@ const Countries = () => {
             .then(res => res.json())
             // .then(data => console.log(data));
             .then(data => {
-                setCountries(data)
+                setCountries(data);
                 setLoading(false);
             })
 

@@ -3,16 +3,14 @@ import { Link } from 'react-router-dom';
 
 
 const Navbar = () => {
-   
+
 
 
     const menuItems = <>
         <li className='text-white font-semibold px-10'><Link to='/'>All Countries</Link></li>
         <li className='text-white font-semibold px-10'><Link to='/AscendingDescending'>Ascending / Descending</Link></li>
         <li className='text-white font-semibold px-10'><Link to='/SmallerLithuania'>Smaller Lithuania Area</Link></li>
-        {/* <li className='text-white font-semibold px-10'><Link to='/OceaniaRegion'>Oceania Region</Link></li> */}
-
-       
+        <li className='text-white font-semibold px-10'><Link to='/OceaniaRegion'>Oceania Region</Link></li>
     </>
 
 
@@ -29,9 +27,9 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <Link to="/" className="btn btn-ghost normal-case text-xl">
-                    
+
                     <h2 className='text-transparent bg-clip-text bg-gradient-to-r from-blue-100 to-blue-400 text-2xl font-bold '>A</h2>
-                    
+
 
                 </Link>
             </div>
