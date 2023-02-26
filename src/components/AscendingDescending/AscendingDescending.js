@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from 'react';
+import useTitle from '../../hooks/useTitle';
 import Sortable from '../Sortable/Sortable';
 
 
 
 
 const AscendingDescending = () => {
+    useTitle('Ascending / Descending')
+
     const [countries, setCountries] = useState([]);
     const [isAsc, setIsAsc] = useState(true);
 
@@ -24,9 +27,11 @@ const AscendingDescending = () => {
     return (
         <div>
 
-            <h1 className='text-3xl font-bold mb-6'>Sortable alphabetically by name (ascending, descending)</h1>
-            <button className='btn btn-outline btn-success px-10 font-bold' onClick={() => setIsAsc(!isAsc)}>{isAsc ? 'desc' : 'asc'}</button>
-            <div className='countries-container'>
+            <div className='text-center'>
+                <h1 className='text-3xl text-blue-900 font-bold mb-6'>Sortable alphabetically by name (ascending, descending)</h1>
+                <button className='btn btn-outline btn-success px-10 font-bold' onClick={() => setIsAsc(!isAsc)}>{isAsc ? 'desc' : 'asc'}</button>
+            </div>
+            <div className='countries-container m-8'>
                 {
 
                     countries.map(country => <Sortable
@@ -34,8 +39,9 @@ const AscendingDescending = () => {
                         key={country.cca3}
                     ></Sortable>)
                 }
+                
             </div>
-
+            
         </div>
     );
 };

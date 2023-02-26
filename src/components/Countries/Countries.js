@@ -1,13 +1,16 @@
 import React, { useEffect, useState } from 'react';
+import useTitle from '../../hooks/useTitle';
 import Country from '../Country/Country';
 import Pagination from '../Pagination/Pagination';
 
 
 const Countries = () => {
+    useTitle('All Countries')
+
     const [countries, setCountries] = useState([]);
     const [loading, setLoading] = useState(false);
     const [currentPage, setCurrentPage] = useState(1);
-    const [postsPerPage] = useState(10);
+    const [postsPerPage] = useState(5);
 
 
 
@@ -37,9 +40,9 @@ const Countries = () => {
 
     return (
         <div>
-            <h1 className='text-3xl font-bold mb-6'>Available Countries: {countries.length}</h1>
+            <h1 className='text-3xl text-blue-900 font-bold mb-6 text-center'>Available Countries: {countries.length}</h1>
 
-            <div>
+            <div className='m-8'>
                 {
 
                     currentCountries.map(country => <Country

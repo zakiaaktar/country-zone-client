@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
+import useTitle from '../../hooks/useTitle';
 
 const OceaniaRegion = () => {
+    useTitle('Oceania Region')
+
     const [countries, setCountries] = useState([]);
     const [loading, setLoading] = useState(true);
 
@@ -22,15 +25,17 @@ const OceaniaRegion = () => {
     }
 
 
-    
+
 
     return (
         <div>
             
-            <h1 className='text-3xl font-bold mb-6'>Available Oceania Countries: {countries.length}</h1>
-            <ul>
+            <h1 className='text-3xl text-blue-900 text-center font-bold mb-6'>Available Oceania Countries: {countries.length}</h1>
+            <ul className='m-8'>
+           
                 {countries.map(country => (
-                    <li className='mb-6' key={country.name.common}>{country.name.common}</li>
+                    <li className='mb-6' key={country.name.common}>{country.name.common}
+                     <div className="divider"></div></li>
                 ))}
             </ul>
         </div>

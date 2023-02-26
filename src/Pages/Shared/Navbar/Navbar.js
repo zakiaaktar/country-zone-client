@@ -16,7 +16,7 @@ const Navbar = () => {
 
 
     return (
-        <div className="navbar h-20 mb-9 bg-gradient-to-br from-green-900 to-green-500 flex justify-between shadow-2xl">
+        <div className="navbar h-20 mb-9 bg-gradient-to-br from-blue-900 to-blue-500 flex justify-center items-center shadow-2xl">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">

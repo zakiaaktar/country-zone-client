@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from 'react';
+import useTitle from '../../hooks/useTitle';
 import Area from '../Area/Area';
 
 const SmallerLithuania = () => {
+    useTitle('Smaller Lithuania Area')
+
     const [countries, setCountries] = useState([]);
 
 
@@ -20,9 +23,9 @@ const SmallerLithuania = () => {
 
     return (
        <>
-        <h1 className='text-3xl font-bold mb-6'>Smaller Lithuania Area</h1>
+        <h1 className='text-3xl text-blue-900 font-bold mb-6'>Smaller Lithuania Area</h1>
        
-       <div>
+       <div className='m-8'>
            {
 
                countries.map(country => <Area
