@@ -3,7 +3,7 @@ import useTitle from '../../hooks/useTitle';
 import Area from '../Area/Area';
 
 const SmallerLithuania = () => {
-    useTitle('Smaller Lithuania Area')
+    useTitle('Smaller Than Lithuania Area')
 
     const [countries, setCountries] = useState([]);
 
