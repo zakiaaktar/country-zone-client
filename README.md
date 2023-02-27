@@ -1,6 +1,6 @@
-Live Site: https://country-zone.netlify.app/
-
 ### Website Name: Country Zone
+
+### Live Site: https://country-zone.netlify.app/
 
 ### Technologies
 -	React JS

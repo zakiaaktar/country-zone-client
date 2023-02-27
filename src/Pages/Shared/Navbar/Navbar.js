@@ -9,7 +9,7 @@ const Navbar = () => {
     const menuItems = <>
         <li className='text-white font-semibold hover:border-b-4 duration-300 border-violet-600 active'><Link to='/'>All Countries</Link></li>
         <li className='text-white font-semibold hover:border-b-4 duration-300 border-violet-600'><Link to='/AscendingDescending'>Ascending / Descending</Link></li>
-        <li className='text-white font-semibold hover:border-b-4 duration-300 border-violet-600'><Link to='/SmallerLithuania'>Smaller Lithuania Area</Link></li>
+        <li className='text-white font-semibold hover:border-b-4 duration-300 border-violet-600'><Link to='/SmallerLithuania'>Smaller Than Lithuania Area</Link></li>
         <li className='text-white font-semibold hover:border-b-4 duration-300 border-violet-600'><Link to='/OceaniaRegion'>Oceania Region</Link></li>
     </>
 
