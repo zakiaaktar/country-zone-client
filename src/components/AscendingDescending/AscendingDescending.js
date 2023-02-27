@@ -14,7 +14,7 @@ const AscendingDescending = () => {
 
 
     useEffect(() => {
-        fetch(`http://localhost:4000/countries?order=${isAsc ? 'asc' : 'desc'}`)
+        fetch(`https://countries-server-three.vercel.app/countries?order=${isAsc ? 'asc' : 'desc'}`)
             .then(res => res.json())
             // .then(data => console.log(data));
             .then(data => setCountries(data))
@@ -39,9 +39,9 @@ const AscendingDescending = () => {
                         key={country.cca3}
                     ></Sortable>)
                 }
-                
+
             </div>
-            
+
         </div>
     );
 };
