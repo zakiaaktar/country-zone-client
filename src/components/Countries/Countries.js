@@ -1,12 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import useTitle from '../../hooks/useTitle';
 import Country from '../Country/Country';
 import Pagination from '../Pagination/Pagination';
 
 
 const Countries = () => {
-    useTitle('All Countries')
-
     const [countries, setCountries] = useState([]);
     const [loading, setLoading] = useState(false);
     const [currentPage, setCurrentPage] = useState(1);
