@@ -9,8 +9,6 @@ const SmallerLithuania = () => {
 
 
 
-
-
     useEffect(() => {
         fetch('http://localhost:4000/SmallerLithuania')
             .then(res => res.json())
@@ -23,9 +21,9 @@ const SmallerLithuania = () => {
 
     return (
        <>
-        <h1 className='text-3xl text-blue-900 font-bold mb-6'>Smaller Lithuania Area</h1>
+        <h1 data-aos="flip-up" className='text-3xl text-green-700 font-bold my-5 text-center'>Smaller Lithuania Area</h1>
        
-       <div className='m-8'>
+       <div data-aos="fade-up" data-aos-duration="1500">
            {
 
                countries.map(country => <Area

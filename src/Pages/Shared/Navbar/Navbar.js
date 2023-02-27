@@ -7,16 +7,16 @@ const Navbar = () => {
 
 
     const menuItems = <>
-        <li className='text-white font-semibold px-10'><Link to='/'>All Countries</Link></li>
-        <li className='text-white font-semibold px-10'><Link to='/AscendingDescending'>Ascending / Descending</Link></li>
-        <li className='text-white font-semibold px-10'><Link to='/SmallerLithuania'>Smaller Lithuania Area</Link></li>
-        <li className='text-white font-semibold px-10'><Link to='/OceaniaRegion'>Oceania Region</Link></li>
+        <li className='text-white font-semibold hover:border-b-4 duration-300 border-violet-600 active'><Link to='/'>All Countries</Link></li>
+        <li className='text-white font-semibold hover:border-b-4 duration-300 border-violet-600'><Link to='/AscendingDescending'>Ascending / Descending</Link></li>
+        <li className='text-white font-semibold hover:border-b-4 duration-300 border-violet-600'><Link to='/SmallerLithuania'>Smaller Lithuania Area</Link></li>
+        <li className='text-white font-semibold hover:border-b-4 duration-300 border-violet-600'><Link to='/OceaniaRegion'>Oceania Region</Link></li>
     </>
 
 
 
     return (
-        <div className="navbar h-20 mb-9 bg-gradient-to-br from-blue-900 to-blue-500 flex justify-center items-center shadow-2xl">
+        <div className="navbar h-20 px-4 bg-gradient-to-br from-green-500 to-green-700 flex justify-center items-center shadow-xl">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -28,7 +28,7 @@ const Navbar = () => {
                 </div>
                 <Link to="/" className="btn btn-ghost normal-case text-xl">
 
-                    <h2 className='text-transparent bg-clip-text bg-gradient-to-r from-blue-100 to-blue-400 text-2xl font-bold '>A</h2>
+                    <h2 className='text-transparent bg-clip-text bg-gradient-to-r from-blue-100 to-blue-300 text-2xl font-bold '>Assignment</h2>
 
 
                 </Link>

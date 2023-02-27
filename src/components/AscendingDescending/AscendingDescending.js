@@ -28,10 +28,10 @@ const AscendingDescending = () => {
         <div>
 
             <div className='text-center'>
-                <h1 className='text-3xl text-blue-900 font-bold mb-6'>Sortable alphabetically by name (ascending, descending)</h1>
-                <button className='btn btn-outline btn-success px-10 font-bold' onClick={() => setIsAsc(!isAsc)}>{isAsc ? 'desc' : 'asc'}</button>
+                <h1 data-aos="flip-up" className='text-3xl text-green-700 font-bold my-5'>Sortable alphabetically by name (ascending, descending)</h1>
+                <button className='btn btn-outline rounded-full btn-success px-10 font-bold' onClick={() => setIsAsc(!isAsc)}>{isAsc ? 'desc' : 'asc'}</button>
             </div>
-            <div className='countries-container m-8'>
+            <div data-aos="fade-up" data-aos-duration="1500">
                 {
 
                     countries.map(country => <Sortable
